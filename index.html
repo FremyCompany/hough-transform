@@ -1,0 +1,23 @@
+<input type=button onclick="runNextStep()" value="Next step" />
+<hr role="presentation">
+
+<div style="position: relative; height: 300px; width: 400px; margin: 3px; display: inline-block;">
+	<img id="source" src="sample.png" width=400 height=300 style="position: absolute; top: -3px; left: -3px;" />
+	<div id="source-section" style="position:absolute; display: none; outline: 3px solid red; width: 50px; height: 50px; top: 0px; left: 0px; pointer-events: none;"></div>
+</div>
+<canvas id="destin" width=400 height=300></canvas>
+<hr role="presentation">
+
+<canvas id="input-original" width=50 height=50></canvas>
+<canvas id="input" width=50 height=50></canvas>
+<hr role="presentation">
+
+<canvas id="line1" width=50 height=50></canvas>
+<canvas id="line2" width=50 height=50></canvas>
+
+<style>
+
+	canvas, img { border: 3px solid purple; }
+
+</style>
+<script src="hough.js"></script>
